@@ -58,3 +58,15 @@ free and MIT — the audit *service* is the product.
 MIT. Independently derived from the documented VulcanBench #79 finding
 (morganlinton/VulcanBench issue #79 + sudo-ai-git/vulcanbench-findings). No
 affiliation implied.
+
+## Part of a family (deterministic, no-LLM dev-trust CLIs by sudo-ai-git)
+
+One entry to find one, you find the whole set:
+
+- [`harness-audit`](https://github.com/sudo-ai-git/harness-audit) — detect the pytest config-leakage mis-scoring bug (this repo)
+- [`cov-shield`](https://github.com/sudo-ai-git/cov-shield) — the fixer companion: run pytest with repo-root addopts/coverage-gate leak neutralized
+- [`env-precedence-check`](https://github.com/sudo-ai-git/env-precedence-check) — detect CLI-default-silently-overrides-env-var bugs
+- [`ci-diff-audit`](https://github.com/sudo-ai-git/ci-diff-audit) — audit what a pipeline changed vs declared intent
+- [`mcp-schema-lint`](https://github.com/sudo-ai-git/mcp-schema-lint) — validate MCP server-manifest + tool-surface schemas
+
+The paid audit service these feed: **[agensi-builds](https://github.com/sudo-ai-git/agensi-builds)**.
