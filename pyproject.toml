@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harness-audit"
+version = "0.1.0"
+description = "Deterministic agent-eval / benchmark-grading hygiene audit CLI. Detects the silent mis-scoring bug class (pytest cov-gate config leakage)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "sudo-ai-git", email = "sudo-ai-git@users.noreply.github.com" }]
+keywords = ["agent-eval", "benchmark", "pytest", "llm-agents", "ai-evaluation", "ci", "audit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Testing",
+]
+
+[project.scripts]
+harness-audit = "harness_audit:main"
+
+[tool.setuptools]
+py-modules = ["harness_audit"]
